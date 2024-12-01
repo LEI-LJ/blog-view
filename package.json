@@ -1,0 +1,32 @@
+{
+  "name": "boblog.com",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.4.0",
+    "@ant-design/nextjs-registry": "^1.0.1",
+    "antd": "^5.20.2",
+    "axios": "^1.7.4",
+    "eslint-config-prettier": "^9.1.0",
+    "next": "14.2.5",
+    "next-seo": "^6.5.0",
+    "nextjs-toploader": "^1.6.12",
+    "node-schedule": "^2.1.1",
+    "prettier": "^3.3.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}
