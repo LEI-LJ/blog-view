@@ -1,9 +1,9 @@
 import { Inter } from 'next/font/google'
 import '@/assets/css/common/globals.css'
 import '@/assets/css/common/flexible.css'
-import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const inter = Inter({ subsets: ['latin'] })
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import Copyright from '@/components/Common/Copyright'
 import TopProgressBar from '@/components/Common/TopProgressBar'
@@ -24,19 +24,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <SpeedInsights>
-            <html lang="zh-CN">
-            <body className={`${inter.className}`}>
-            <AntdRegistry>
-                <>
-                    <div className="max-w-3xl mx-auto main-min-height">{children}</div>
-                    <Copyright />
-                    <TopProgressBar />
-                </>
-            </AntdRegistry>
-            </body>
-            </html>
-        </SpeedInsights>
+        <html lang="zh-CN">
+        <body className={`${inter.className}`}>
+        <AntdRegistry>
+            <>
+                <div className="max-w-3xl mx-auto main-min-height">{children}</div>
+                <Copyright />
+                <TopProgressBar />
+            </>
+        </AntdRegistry>
+        <SpeedInsights />
+        </body>
+        </html>
 
     )
 }
