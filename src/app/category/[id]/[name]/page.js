@@ -25,7 +25,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     return {
         title: `文章 - ${category.name} - boblog.com`,
         description: category.name,
-        keywords: `波波博客,前端开发,前端工程师,${category.name}`,
+        keywords: `前端开发,前端工程师,${category.name}`,
         alternates: {
             canonical: `${process.env.NEXT_PUBLIC_DOMAIN}${getCategoryURL(category)}`
         }

@@ -7,7 +7,7 @@ import ArticleEmptyList from '@/components/Common/ArticleEmptyList'
 import { defaultMeta } from '@/lib/defaultMeta'
 
 export const metadata = {
-    title: '波波博客-文章列表-boblog.com',
+    title: '文章列表.com',
     description: defaultMeta.description,
     keywords: defaultMeta.keywords
 }
@@ -29,7 +29,8 @@ export default async function Articles({ searchParams }) {
 
     return (
         <BaseLayout activeNav={NAV_ENUM.ARTICLES_PAGE}>
-            {isObject(articleList) ? <ArticleShelf keyword={keyword} articleList={articleList} /> : <ArticleEmptyList />}
+            {isObject(articleList) ? <ArticleShelf keyword={keyword} articleList={articleList} /> :
+                <ArticleEmptyList />}
         </BaseLayout>
     )
 }

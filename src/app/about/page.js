@@ -9,7 +9,7 @@ import { defaultMeta } from '@/lib/defaultMeta'
 import travelImage from '@/assets/images/travel/travel.png'
 
 export const metadata = {
-    title: '关于博客 - boblog.com',
+    title: '关于博客.com',
     description: defaultMeta.description,
     keywords: defaultMeta.keywords
 }
@@ -34,7 +34,8 @@ export default function About() {
                     <p>希望我的分享能对你有所帮助！</p>
                 </div>
                 <div className="about-right">
-                    <Image src={travelImage} width="0" height="0" sizes="100vw" className="about-image" alt={'波波博客'} />
+                    <Image src={travelImage} width="0" height="0" sizes="100vw" className="about-image"
+                           alt={'波波博客'} />
                 </div>
             </div>
         </>
